@@ -10,11 +10,11 @@ namespace ProjetoPO.Api.Controllers
 {
     [Produces("application/json")]
     [Route("api/users")]
-    public class UserController : Controller
+    public class UsersController : Controller
     {
         private readonly BaseContext _context;
 
-        public UserController(BaseContext context)
+        public UsersController(BaseContext context)
         {
             _context = context;
         }
@@ -62,7 +62,7 @@ namespace ProjetoPO.Api.Controllers
                 return new NoContentOperationResult("Nenhum usuário encontrado com o Id especificado.");
             }
 
-            return new OkOperationResult("usuário obtido com sucesso!", user);
+            return new OkOperationResult("Usuário obtido com sucesso!", user);
         }
 
         /// <summary>
@@ -97,7 +97,7 @@ namespace ProjetoPO.Api.Controllers
             _context.Users.Add(user);
             _context.SaveChanges();
 
-            return new CreatedOperationResult("usuário criado com sucesso!", user);
+            return new CreatedOperationResult("Usuário criado com sucesso!", user);
         }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace ProjetoPO.Api.Controllers
             user = _context.Update(user).Entity;
             _context.SaveChanges();
 
-            return new AcceptedOperationResult("usuário atualizado com sucesso!", user);
+            return new AcceptedOperationResult("Usuário atualizado com sucesso!", user);
         }
 
         /// <summary>
@@ -160,7 +160,7 @@ namespace ProjetoPO.Api.Controllers
             user = _context.Remove(user).Entity;
             _context.SaveChanges();
 
-            return new OkOperationResult("usuário excluído com sucesso!", user);
+            return new OkOperationResult("Usuário excluído com sucesso!", user);
         }
     }
 }

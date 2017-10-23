@@ -76,7 +76,6 @@ namespace ProjetoPO.Cliente
                         Console.WriteLine("Reposta:");
                         Console.Write(JsonConvert.SerializeObject(request.Result, serializerSettings));
                         Console.WriteLine();
-
                         break;
 
                     case 2:
@@ -94,7 +93,6 @@ namespace ProjetoPO.Cliente
                         Console.WriteLine("Reposta:");
                         Console.Write(JsonConvert.SerializeObject(request.Result, serializerSettings));
                         Console.WriteLine();
-
                         break;
 
                     case 3:
@@ -117,7 +115,6 @@ namespace ProjetoPO.Cliente
                         Console.WriteLine("Reposta:");
                         Console.Write(JsonConvert.SerializeObject(request.Result, serializerSettings));
                         Console.WriteLine();
-
                         break;
 
                     case 4:
@@ -143,7 +140,6 @@ namespace ProjetoPO.Cliente
                         Console.WriteLine("Reposta:");
                         Console.Write(JsonConvert.SerializeObject(request.Result, serializerSettings));
                         Console.WriteLine();
-
                         break;
 
                     case 5:
@@ -174,7 +170,6 @@ namespace ProjetoPO.Cliente
                         Console.WriteLine("Reposta:");
                         Console.Write(JsonConvert.SerializeObject(request.Result, serializerSettings));
                         Console.WriteLine();
-
                         break;
 
                     case 6:
@@ -198,7 +193,6 @@ namespace ProjetoPO.Cliente
                         Console.WriteLine("Reposta:");
                         Console.Write(JsonConvert.SerializeObject(request.Result, serializerSettings));
                         Console.WriteLine();
-
                         break;
 
                     case 0:

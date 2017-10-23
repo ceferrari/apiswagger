@@ -63,6 +63,8 @@ namespace ProjetoPO.Api
 
             ConfigureAuth(services);
 
+            services.AddRouting(opt => opt.LowercaseUrls = true);
+
             services.AddMvc(config =>
             {
                 config.Filters.Add(new CustomAuthorizeFilter(
@@ -138,6 +140,7 @@ namespace ProjetoPO.Api
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProjetoPO v1");
+                c.InjectStylesheet("/swagger-ui/custom.css");
             });
         }
 
